@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "src.port": 2055,
+      "protocol": "udp",
+      "mirrors": [
+        {
+          "dst.port": 2055,
+          "dst.ip": "10.20.40.79",
+          "print.interval.sec": 10
+        },
+        {
+          "dst.port": 2055,
+          "dst.ip": "10.20.40.65",
+          "print.interval.sec": 5
+        }
+      ]
+    },
+    {
+      "src.port": 514,
+      "protocol": "udp",
+      "mirrors": [
+        {
+          "dst.port": 514,
+          "dst.ip": "10.20.40.79",
+          "print.interval.sec": 5
+        }
+      ]
+    }
+  ],
+  "print.interval.sec": 5
+}
